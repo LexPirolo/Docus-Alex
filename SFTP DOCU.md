@@ -1,19 +1,27 @@
 # Establish SFTP connection with Fury applications
 
-> SFTP is similar to FTPS in that both offer additional protection for files and changes made to the hosting. However, SFTP uses SSH (Secure Shell) technology to authenticate the contact and establish a secure connection between machines.
+## Introduction
+
+SFTP is similar to FTPS in that both offer additional protection for files and changes made to the hosting. However, SFTP uses SSH (Secure Shell) technology to authenticate the contact and establish a secure connection between machines.
 
 I'll leave you a link if you want to study more on the subject:
 * https://www.hostinger.com.br/tutoriais/como-usar-sftp-ssh-file-transfer-protocol
 
+## Prerequisites
+
+For this, it is necessary to understand how to connect to an instance via alfred, know how to register a secret key in fury and have access to the shield.
+
+## Directions
+
 We have 2 ways to establish an SFTP connection with Fury applications:
 
-* External SFTP: The SFTP service is provided by a provider.
-* Internal SFTP: The SFTP service is provided by MELI.
+* 1)External SFTP: The SFTP service is provided by a provider.
+* 2)Internal SFTP: The SFTP service is provided by MELI.
 
 ----------------------------------------------
 ## 1) Connection to an external SFTP
 
-> The provider must share with us the URL of the SFTP service and the connection will be made by means of keys, one public and one private. We must share the public one with the provider and the private one will be hosted by the Secrets service in order to establish the connection. The steps required to perform this operation are as follows:
+The provider must share with us the URL of the SFTP service and the connection will be made by means of keys, one public and one private. We must share the public one with the provider and the private one will be hosted by the Secrets service in order to establish the connection. The steps required to perform this operation are as follows:
 
 #### 1. The first step is to generate the public and private SSH keys from the terminal of your own machine by executing the following command:
 
@@ -73,4 +81,3 @@ sftp -i key.pem user_name @ url_server_ftp (USER_NAME and URL_SERVER_FTP - They 
 The steps for the connection will be the same as those established in the previous points, but what we must add is the request for the SFTP service, for this, all we have to do is create a ticket via shield "Request for SFTP Registration for supplier"
 
 ![11 meli](https://user-images.githubusercontent.com/81833300/134933843-78b13e3d-5775-4501-92d0-0c7e30c22b44.png)
-
