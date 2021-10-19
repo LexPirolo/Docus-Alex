@@ -1,4 +1,4 @@
-# Establish SFTP connection with Fury applications
+# How To Establish SFTP connection with Fury applications
 
 ## Introduction
 
@@ -15,11 +15,11 @@ For this, it is necessary to understand how to connect to an instance via alfred
 
 We have 2 ways to establish an SFTP connection with Fury applications:
 
-* 1)External SFTP: The SFTP service is provided by a provider.
-* 2)Internal SFTP: The SFTP service is provided by MELI.
+1) External SFTP: The SFTP service is provided by a provider.
+2) Internal SFTP: The SFTP service is provided by MELI.
 
 ----------------------------------------------
-## 1) Connection to an external SFTP
+## Step 1): Connection to an external SFTP
 
 The provider must share with us the URL of the SFTP service and the connection will be made by means of keys, one public and one private. We must share the public one with the provider and the private one will be hosted by the Secrets service in order to establish the connection. The steps required to perform this operation are as follows:
 
@@ -31,7 +31,7 @@ The provider must share with us the URL of the SFTP service and the connection w
 -> Then it will ask you for the names of the files to be created. We use the name sftp_id_rsa:
 ![2 Generating Puplic:Privat](https://user-images.githubusercontent.com/81833300/134931460-854daa71-5706-46be-aec5-034632d3a8b2.png)
 
-— > No es necesario ingresar una contraseña, si no desea ingresar presione enter dos veces:
+-> It is not necessary to enter a password, if you do not want to enter press enter twice:
  ![3 Senha](https://user-images.githubusercontent.com/81833300/134931666-6265384c-4b6a-41a7-a8e4-d31094a28d80.png)
 
 -> After that, you will see that it was created successfully:
@@ -76,7 +76,7 @@ sftp -i key.pem user_name @ url_server_ftp (USER_NAME and URL_SERVER_FTP - They 
   * In the print of this tutorial we have established the connection with a public SFTP: demo@test.rebex.net
 
 ----------------------------------------------
-## 2) Connection to an internal MELI SFTP
+## Step 2): Connection to an internal MELI SFTP
 
 The steps for the connection will be the same as those established in the previous points, but what we must add is the request for the SFTP service, for this, all we have to do is create a ticket via shield "Request for SFTP Registration for supplier"
 
