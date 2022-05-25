@@ -83,4 +83,5 @@ sftp -i key.pem user_name @ url_server_ftp (USER_NAME and URL_SERVER_FTP - They 
 
 The steps for the connection will be the same as those established in the previous points, but what we must add is the request for the SFTP service, for this, all we have to do is create a ticket via shield "Request for SFTP Registration for supplier"
 
-![11 meli](https://user-images.githubusercontent.com/81833300/134933843-78b13e3d-5775-4501-92d0-0c7e30c22b44.png)
+<img width="1343" alt="Captura de Tela 2022-05-25 às 16 15 09" src="https://user-images.githubusercontent.com/81833300/170350208-01a5e0aa-7627-494e-a118-dd68ffa2aeb0.png">
+
