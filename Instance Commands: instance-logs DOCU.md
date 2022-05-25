@@ -4,7 +4,8 @@
 
 At the moment in which a deploy is carried out, it remains in the "boot application" step, it does not respond to the /ping resource and the Rollback is generated. No logs are observed demonstrating the failure of the deploy.
 
-![steps deploy](https://user-images.githubusercontent.com/81833300/136280680-d4cb4bb8-5f24-407c-a2bd-ab368f34c339.jpeg)
+<img width="767" alt="1" src="https://user-images.githubusercontent.com/81833300/170336562-efdb6142-cccf-4038-8a37-9c4988761450.png">
+
 
 ## Prerequisites
 
@@ -49,7 +50,7 @@ Some tips to check:
 
 - Look at the deploy Kibana, it can show the exact error and help identify the problem.
 
-![kibana](https://user-images.githubusercontent.com/81833300/136287493-46763ac3-2176-42b9-b95e-14b64012e42d.png)
+<img width="1495" alt="Captura de Tela 2022-05-25 às 15 12 14" src="https://user-images.githubusercontent.com/81833300/170338263-36a7867a-c2cf-4e48-8d8a-152b9e14d87f.png">
 
 Path of the application in dockerfile, check if it has the correct name and if everything is correct:
 
