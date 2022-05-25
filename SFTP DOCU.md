@@ -51,15 +51,18 @@ The provider must share with us the URL of the SFTP service and the connection w
 
 
 -> Enter the name that the secret will have in key, the description and the keys.
-![6 Create Secret Key](https://user-images.githubusercontent.com/81833300/134932009-49c60f59-87fd-48ab-925c-ce1757ef8ee7.png)
+<img width="440" alt="6" src="https://user-images.githubusercontent.com/81833300/170328190-99147220-05ad-4f66-8213-55ea3aa23c38.png">
+
 
 In itself setting secrets is very simple. From the team they provide us with a very clear user manual on how to manage it. Secrets service user manual.
 In these cases, the best thing we can do if we want to bring those secrets to a code environment is to use the snippets that we can see in each of the secrets.
 
-![7 Snippets](https://user-images.githubusercontent.com/81833300/134932157-aa8a48d8-7a85-4b4c-98a2-8708d42857d5.png)
+<img width="116" alt="7" src="https://user-images.githubusercontent.com/81833300/170329453-0b3076bc-e432-4879-8ca5-d6d398a9dfc7.png">
+
 
 The snippets are adapted according to the technology we use!
-![8 Config Snippets](https://user-images.githubusercontent.com/81833300/134932264-e0d38cfb-9c29-4cd3-bd2c-2cf4125e6f8a.png)
+<img width="836" alt="8" src="https://user-images.githubusercontent.com/81833300/170329768-cbac562e-3be7-4353-89c5-d4b12a2ad963.png">
+
   * This step must be repeated for each of the keys.
 
 #### 4. In order to guarantee the connection between the SFTP service and our Fury app, it will also be necessary for the provider to have all the MELI public IPs allowed in its whitelist. The complete list of IPs is available at the following link:
