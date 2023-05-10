@@ -16,8 +16,11 @@ For that you have to know how to use the terminal tool from the front end of fur
 The step by step that we are going to do is the following:
 
 1) How do i use it?
-2) Common errors?
-
+2) Common errors? 
+    - Fury Run
+    - Kibana
+    - Grafana
+    -  Dockerfile
 __________
 
 ## Step 1): How do i use it?
@@ -46,13 +49,37 @@ ______________
 
 Some tips to check:
 
-- First of all it is necessary to know if the version runs well locally with fury run.
+1) First of all it is necessary to know if the version runs well locally with fury run.
 
-- Look at the deploy Kibana, it can show the exact error and help identify the problem.
+2) Look at the deploy Kibana, it can show the exact error and help identify the problem.
 
-<img width="1495" alt="Captura de Tela 2022-05-25 às 15 12 14" src="https://user-images.githubusercontent.com/81833300/170338263-36a7867a-c2cf-4e48-8d8a-152b9e14d87f.png">
+<img width="1429" alt="1" src="https://github.com/LexPirolo/Docus-Alex/assets/81833300/1160407d-5a39-4a8f-9875-f66317a7ca8d">
 
-Path of the application in dockerfile, check if it has the correct name and if everything is correct:
+Clicking on Kibana loads the screen with all the logs, what we can do here is put the error search field and filter the deploy date
+
+<img width="1723" alt="5" src="https://github.com/LexPirolo/Docus-Alex/assets/81833300/79de4a2b-99af-4a3d-a84f-a7126caf5712">
+
+Below in message we already see the error with the filter
+
+<img width="1727" alt="image" src="https://github.com/LexPirolo/Docus-Alex/assets/81833300/89b9e485-ac8a-4216-9e2f-80e6ed900707">
+
+
+3) It is also possible to check the Grafana dashboard to see if there are any errors.
+ 
+To access the Grafana dashboard we need the Deployment ID, it is the numeral that is contained in the deploy link
+
+<img width="1791" alt="0 1" src="https://github.com/LexPirolo/Docus-Alex/assets/81833300/195ae434-d9c7-49d1-be07-36d29f9f1332">
+
+In Grafana we put the deployment ID that we got in fury in the Deployment field, when loading the information we have some dashboards with logs regarding the containers, the number of errors, etc.
+
+<img width="1717" alt="2" src="https://github.com/LexPirolo/Docus-Alex/assets/81833300/4cfd735c-f036-478e-bdba-7de060159289">
+
+To verify the errors we go down in the dashboard Error/ Severe/ Panic logs. Here the word error is marked in yellow
+
+<img width="1726" alt="3" src="https://github.com/LexPirolo/Docus-Alex/assets/81833300/d69f84de-09b8-407b-9f13-5f8444f4c7d6">
+
+
+4) Path of the application in dockerfile, check if it has the correct name and if everything is correct:
 
 ![from](https://user-images.githubusercontent.com/81833300/136287640-62ad33d2-64be-481f-8add-e73d131efc79.png)
 
