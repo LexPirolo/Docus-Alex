@@ -83,7 +83,8 @@ Infreaestructure> We select the Scope in which the deployment is being carried o
 
 #### ***Warning:***
 
- * Execute the command at the moment in which the deployment is being carried out, if possible in boot your app.
-* In case you are deploying with Bluegreen or Canary strategy, check that the selected instance belongs to the Candidate.
+  * Execute the command at the moment in which the deployment is being carried out, if possible in boot your app.
+  * In case you are deploying with Bluegreen or Canary strategy, check that the selected instance belongs to the Candidate.
+  * Remembering that to see logs through the terminal is only possible for Standart scopes, it is not possible to see from severless scopes.
 
 Especially if the error is / ping, check if it consumes secrets, connections to other services (db, kvs, bq, etc), and if the names are correct according to the service snippets on the fury page.
