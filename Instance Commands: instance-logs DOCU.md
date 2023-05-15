@@ -1,4 +1,4 @@
-# Instance Commands: instance-logs
+# Logs and Instance Commands: instance-logs
 
 ## Introduction
 
@@ -9,41 +9,23 @@ At the moment in which a deploy is carried out, it remains in the "boot applicat
 
 ## Prerequisites
 
-For that you have to know how to use the terminal tool from the front end of fury and kibana.
+For that you have to know how to use the terminal tool from the front end of fury, kibana and granafa.
 
 ## Directions
 
 The step by step that we are going to do is the following:
 
-1) How do i use it?
-2) Common errors? 
+1) Common errors? 
     - Fury Run
     - Kibana
     - Grafana
     -  Dockerfile
+    
+2) Terminal, How do i use it?
+
 __________
 
-## Step 1): How do i use it?
-
-In order to use this command, it is necessary that at the moment in which the deploy is being carried out we position ourselves on:
-
-Infreaestructure> We select the Scope in which the deployment is being carried out> We select an instance> "Terminal"
-
-![terminal](https://user-images.githubusercontent.com/81833300/136284660-19c3d3a1-49f1-4ead-90c9-38758172b8b9.jpeg)
-
-* Inside the terminal we will execute any command at ease:
-
->1. By Default: instance-logs (shows only the amount of 10 lines)
->2. Per line: instance-logs --lines = 100 (number of lines to be displayed by the user, in this case we give the example of 100)
->3. By Keep tailing: instance-logs -f
-
-#### ***Warning:***
-
- * Execute the command at the moment in which the deployment is being carried out, if possible in boot your app.
-* In case you are deploying with Bluegreen or Canary strategy, check that the selected instance belongs to the Candidate.
-______________
-
-## Step 2): ***Common errors?***
+## Step 1): ***Common errors?***
 
 * In most cases, the error comes from the application side, that is, it is not an issue with the Fury infrastructure.
 
@@ -82,5 +64,26 @@ To verify the errors we go down in the dashboard Error/ Severe/ Panic logs. Here
 4) Path of the application in dockerfile, check if it has the correct name and if everything is correct:
 
 ![from](https://user-images.githubusercontent.com/81833300/136287640-62ad33d2-64be-481f-8add-e73d131efc79.png)
+
+______________
+
+## Step 2): Terminal, How do i use it?
+
+In order to use this command, it is necessary that at the moment in which the deploy is being carried out we position ourselves on:
+
+Infreaestructure> We select the Scope in which the deployment is being carried out> We select an instance> "Terminal"
+
+![terminal](https://user-images.githubusercontent.com/81833300/136284660-19c3d3a1-49f1-4ead-90c9-38758172b8b9.jpeg)
+
+* Inside the terminal we will execute any command at ease:
+
+>1. By Default: instance-logs (shows only the amount of 10 lines)
+>2. Per line: instance-logs --lines = 100 (number of lines to be displayed by the user, in this case we give the example of 100)
+>3. By Keep tailing: instance-logs -f
+
+#### ***Warning:***
+
+ * Execute the command at the moment in which the deployment is being carried out, if possible in boot your app.
+* In case you are deploying with Bluegreen or Canary strategy, check that the selected instance belongs to the Candidate.
 
 Especially if the error is / ping, check if it consumes secrets, connections to other services (db, kvs, bq, etc), and if the names are correct according to the service snippets on the fury page.
