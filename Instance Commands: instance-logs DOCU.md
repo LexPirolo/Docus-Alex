@@ -9,7 +9,9 @@ At the moment in which a deploy is carried out, it remains in the "boot applicat
 
 ## Prerequisites
 
-For that you have to know how to use the terminal tool from the front end of fury, kibana and granafa.
+For this, you need to know:
+- How to use the terminal tool on the Fury front-end
+- How to view logs in kibana and grafana.
 
 ## Directions
 
@@ -46,8 +48,7 @@ Below in message we already see the error with the filter
 <img width="1727" alt="image" src="https://github.com/LexPirolo/Docus-Alex/assets/81833300/89b9e485-ac8a-4216-9e2f-80e6ed900707">
 
 
-3) It is also possible to check the Grafana dashboard to see if there are any errors.
- 
+3) It is also possible to check the [Grafana dashboard](https://grafana.furycloud.io/d/7pwuWbt4z/deployments-dashboard?orgId=1)
 To access the Grafana dashboard we need the Deployment ID, it is the numeral that is contained in the deploy link
 
 <img width="1791" alt="0 1" src="https://github.com/LexPirolo/Docus-Alex/assets/81833300/195ae434-d9c7-49d1-be07-36d29f9f1332">
